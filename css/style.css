@@ -1,0 +1,441 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.clearfix:after{
+	display:block; 
+	overflow:hidden; 
+	clear:both; 
+	height:0; 
+	visibility:hidden; 
+	content:".";
+}
+.clearfix{
+	*zoom:1;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width: 1152px;
+	margin: 0 auto;  
+}
+input {
+	border-style: none;
+	outline: 0;
+}
+/*导航栏部分开始*/
+header {
+	height: 72px;
+}
+.nav {
+	height: 72px;
+	width: 1366px;
+	margin: 0 auto;
+}
+.logo {
+	float: left;
+	margin: 21px 0 0 46px;
+}
+.nav-c {
+	float: left;
+	margin-left: 68px;
+}
+.nav-c li {
+	float: left;
+	line-height: 72px;
+	padding: 0 20px;
+}
+.nav-c li a {
+	color: #4D555D;
+	font-size: 16px;
+}
+.nav-c li a:hover {
+	color: skyblue;
+	border-bottom: 2px solid orange;
+}
+.nav-c li input {
+	height: 52px;
+	width: 176px;
+	padding-left: 20px;
+	border-bottom: 1px solid #D9DDE1;
+	background:url(../images/search.png) no-repeat center right;
+}
+.download {
+	float: right;
+}
+.download li {
+	float: left;
+	line-height: 72px;
+	margin-right: 30px;
+}
+.download li a {
+	color: #4D555D;
+	font-size: 16px;
+}
+.download li a:hover {
+	color: skyblue;
+	border-bottom: 2px solid orange;
+}
+.download li:nth-child(2) {
+	display: block;
+	height: 34px;
+	width: 104px;
+	margin-top: 14px;
+	cursor: pointer;
+}
+/*导航栏部分结束*/
+/*banner部分开始*/
+.column {
+	background:url(../images/bgc.png) ;
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+}
+.banner {
+	height: 444px;
+	border-radius: 10px;
+	margin-top: 32px;
+	position: relative;
+	box-shadow: 10px 15px 15px 0 rgba(0,0,0,0.4)
+}
+.banner-l {
+	float: left;
+}
+.banner-l li {
+	width: 216px;
+	height: 63px;
+	line-height: 55px;
+	padding: 0 28px;
+	box-sizing:border-box;
+	background-color: #2B333B;	
+}
+.banner-l li:first-child{
+	border-top-left-radius: 10px;
+}
+.banner-l li:last-child {
+	height: 66px;
+	border-bottom-left-radius: 10px;
+}
+.banner-l li span {
+	float: right;
+}
+.banner-l li a {
+	color: #AAADB1;
+}
+.banner-l li a:hover {
+	color: #CBCFE0;
+}
+.banner-r-t {
+	position: relative;
+}
+.banner-r-t {
+	float: left;
+	border-top-right-radius: 10px;
+}
+.banner-r-b {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 936px;
+	height: 129px;
+}
+.banner-r-b li {
+	background-color: #fff;
+	width: 187px;
+	height: 128px;
+	box-sizing:border-box;
+	padding: 0 20px;
+	float: left;
+	margin-left:px; 
+}
+.banner-r-b li:last-child {
+	border-bottom-right-radius: 10px;
+}
+.banner-r-b li img {
+	margin-left: 35px;
+}
+.banner-r-b li h3, .banner-r-b li p {
+	font-size: 12px;
+	text-align: center;
+}
+.banner-r-b li h3 {
+	color: #07111B;
+}
+.banner-r-b li p {
+	color: #93999F;
+}
+/*banner部分结束*/
+/*实战推荐部分开始*/
+.recommend {
+	height: 390px;
+	background-color: #fff;
+}
+.combat img {
+	display: block;
+	margin: 20px auto;
+}
+.combat li {
+	float: left;
+	width: 216px;
+	height: 240px;
+	margin-left: 18px;
+	border-radius: 10px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.combat li:nth-child(1) {
+	margin-left: 0;
+}
+/*实战推荐部分结束*/
+/*新上好课部分开始*/
+.subject {
+	height: 390px;
+	background-color: #F8FAFC;
+}
+.study img {
+	display: block;
+	margin: 20px auto;
+}
+.study li {
+	float: left;
+	width: 216px;
+	height: 240px;
+	margin-left: 18px;
+	border-radius: 10px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.study li:nth-child(1) {
+	margin-left: 0;
+}
+/*新上好课部分结束*/
+/*新手入门部分开始*/
+.rookie {
+	height: 538px;
+	background-color: #fff;
+}
+.door .rookie1 img{
+	display: block;
+	margin: 20px auto;
+}
+.door .rookie2 {
+	margin: 10px 0 20px 0;
+}
+.door .rookie2 .r {
+	float: right;
+}
+.door li {
+	float: left;
+	width: 216px;
+	height: 240px;
+	margin-left: 18px;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.door li:nth-child(1) {
+	margin-left: 0;
+}
+/*新手入门部分结束*/
+/*技能提升部分开始*/
+.capacity {
+	height: 390px;
+	background-color: #F8FAFC;
+}
+.improve img {
+	display: block;
+	margin: 20px auto;
+}
+.improve li {
+	float: left;
+	width: 216px;
+	height: 240px;
+	margin-left: 18px;
+	border-radius: 10px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.improve li:nth-child(1) {
+	margin-left: 0;
+}
+/*技能提升部分结束*/
+/*前沿技术开始*/
+.technique {
+	height: 538px;
+	background-color: #fff;
+}
+.th .rookie1 img{
+	display: block;
+	margin: 20px auto 20px;
+}
+.th .rookie2 {
+	margin: 10px 0 20px 0;
+}
+.th .rookie2 .r {
+	float: right;
+}
+.th li {
+	float: left;
+	width: 216px;
+	height: 240px;
+	margin-left: 18px;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.th li:nth-child(1) {
+	margin-left: 0;
+}
+/*前沿技术结束*/
+/*精彩手记及猿问部分开始*/
+.note {
+	height: 1634px;
+	background-color: #F8FAFC;
+}
+.question .qt-pic img{
+	display: block;
+	margin: 20px auto;
+}
+.list1 li{
+	float: left;
+	width: 372px;
+	height: 1600px;
+	margin-left: 18px;
+}
+.list1 li:nth-child(1) {
+	margin-left: 0;
+}
+.list2 ol li:nth-child(1) {
+	height: 666px;
+	padding: 17px 0 0 24px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list2 ol li:nth-child(2) {
+	height: 368px;
+	margin-top: 18px;
+	padding: 21px 0 0 18px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list2 ol li:nth-child(3) {
+	height: 294px;
+	margin-top: 18px;
+	padding: 23px 0 0 18px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list2 ol li:nth-child(n){
+	margin-left: 0;
+	background-color: #fff;
+	transition: all 0.8s;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.list2 ol li:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.list3 ol li:nth-child(1) {
+	height: 368px;
+	padding: 27px 0 0 25px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list3 ol li:nth-child(2) {
+	height: 345px;
+	margin-top: 18px;
+	padding: 13px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list3 ol li:nth-child(3) {
+	height: 221px;
+	margin-top: 18px;
+	padding: 15px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list3 ol li:nth-child(4) {
+	height: 368px;
+	margin-top: 18px;
+	padding: 11px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list3 ol li:nth-child(n){
+	margin-left: 0;
+	background-color: #fff;
+	transition: all 0.8s;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.list3 ol li:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.list4 ol li:nth-child(1) {
+	height: 368px;
+	padding: 13px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list4 ol li:nth-child(2) {
+	height: 369px;
+	margin-top: 18px;
+	padding: 13px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list4 ol li:nth-child(3) {
+	height: 221px;
+	margin-top: 18px;
+	padding: 9px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list4 ol li:nth-child(4) {
+	height: 143px;
+	margin-top: 18px;
+	padding: 14px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list4 ol li:nth-child(5) {
+	height: 141px;
+	margin-top: 18px;
+	padding: 9px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list4 ol li:nth-child(6) {
+	height: 141px;
+	margin-top: 18px;
+	padding: 11px 0 0 12px;
+	box-sizing:border-box;
+	border-radius: 10px;
+}
+.list4 ol li:nth-child(n){
+	margin-left: 0;
+	background-color: #fff;
+	transition: all 0.8s;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.list4 ol li:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+/*精彩手记及猿问部分结束*/
+/*底部开始*/
+
+/*底部结束*/
+/*右侧导航栏开始*/
+.slide1 {
+	position: fixed;
+	width: 60px;
+	height: 228px;
+	top:254px;
+	right: 0;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/*右侧导航栏结束*/
+
+	
